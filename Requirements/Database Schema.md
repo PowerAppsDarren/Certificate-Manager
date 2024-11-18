@@ -1,7 +1,13 @@
 
 # Database Schema
 
-Here is the proposed database schema for your certificate management system:
+## ERD Link
+
+https://drawsql.app/teams/neeseus/diagrams/certificate-manager
+
+## Markdown Table
+
+Here is the database schema in a markdown table format:
 
 | Table Name | Column Name | Data Type | PK/FK | Description | Indexes/Constraints |
 |------------|-------------|-----------|-------|-------------|---------------------|
