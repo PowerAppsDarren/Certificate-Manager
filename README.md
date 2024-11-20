@@ -1,5 +1,9 @@
 # Certificate-Manager
-This Power Apps application will help IT personnel manage server certificates
+
+This Power Apps application will help IT personnel manage server certificates, but 
+
+
+
 
 - [Database Schema](Requirements/Database Schema.md)
 

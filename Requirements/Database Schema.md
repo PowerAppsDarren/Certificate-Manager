@@ -3,9 +3,10 @@
 
 ## ERD Link
 
-https://drawsql.app/teams/neeseus/diagrams/certificate-manager
 
-<iframe width="100%" height="500px" style="box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); border-radius:15px;" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Embedded DrawSQL IFrame" frameborder="0" src="https://drawsql.app/teams/neeseus/diagrams/certificate-manager/embed"></iframe>
+![Certificate Manager ERD](/Requirements/drawSQL-image-export-2024-11-20.png)
+
+https://drawsql.app/teams/neeseus/diagrams/certificate-manager
 
 
 ## Markdown Table
@@ -44,6 +45,9 @@ Here is the database schema in a markdown table format:
 | User | ModifiedOn | DateTime | - | Date and time when the user record was last modified | - |
 
 This table structure provides a solid foundation for the Certificate Management Power Apps application. It includes the necessary relationships between tables, appropriate data types, and indexes for improved performance. The structure also allows for easy tracking of certificate expiration dates, notification management, and user roles within the system.
+
+
+<iframe width="100%" height="500px" style="box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); border-radius:15px;" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Embedded DrawSQL IFrame" frameborder="0" src="https://drawsql.app/teams/neeseus/diagrams/certificate-manager/embed"></iframe>
 
 Citations:
 [1] https://docs.redhat.com/en/documentation/red_hat_certificate_system/9/html/administration_guide/managing_the_certificate_database
