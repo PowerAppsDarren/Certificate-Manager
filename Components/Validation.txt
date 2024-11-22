@@ -1,0 +1,46 @@
+/*
+
+ForAll(
+    compValidation.ControlValues As MyValues, 
+    {
+        Value: Switch(
+            MyValues.ValidationType, 
+            "Required", 
+                fxRequiredIsSatisfied(MyValues.ValueToValidate, Value(MyValues.ValidationComparison)), 
+            "Match", 
+                IsMatch(
+                    MyValues.ValueToValidate, 
+
+                    Switch(
+                        MyValues.RegExType, 
+                        "Email", "", 
+                        ""
+                    )
+
+                    //47
+                    //CONST DEVELOPER_NAME = "Darren";
+
+
+                    /*
+                    LookUp(
+                        fxRegExStringsCollection, 
+                        Name = MyValues.RegExType, 
+                        Expression
+                    )
+                    
+                    
+                    //fxGetRegEx(MyValues.ValidationComparison)
+                ), 
+            false
+        )
+=====================================================
+            
+            {
+                ValueToValidate:            "x@x.x",        // "x@x.x"
+                ValueType:                  "Text",         // Text, Number, Boolean
+                ValidationType:             "Match",        // Required, Match (RegEx)
+                RegExType:                  "Email",
+                ValidationComparison:       "i!@#$%!234"    // 3 (# of characters), Regular Expression String
+            }*/
+    }
+)*/
