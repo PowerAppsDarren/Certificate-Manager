@@ -5,6 +5,11 @@ This Power Apps application will help IT personnel manage server certificates, b
 - [Database Schema](Requirements/Database Schema.md)
 - https://www.youtube.com/live/mf2rmM9ZxZ0?si=qUlhUY-bXXmUEuIR
 
+## General Information
+
+Certificate Issuance Workflow: Allow users to generate certificates by entering recipient details and selecting templates.
+
+Template Designer: Enable admins to create and manage custom certificate templates with dynamic fields (e.g., name, date, course title).
 
 ## Friday Agenda
 

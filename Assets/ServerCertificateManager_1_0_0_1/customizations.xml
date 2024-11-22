@@ -1,0 +1,96 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24104.176" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24112.00178">
+  <Entities></Entities>
+  <Roles></Roles>
+  <Workflows>
+    <Workflow WorkflowId="{c3962a9d-eba8-ef11-8a69-00224802f629}" Name="ChronJobSample">
+      <JsonFileName>/Workflows/ChronJobSample-C3962A9D-EBA8-EF11-8A69-00224802F629.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="ChronJobSample" />
+      </LocalizedNames>
+    </Workflow>
+  </Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <CanvasApps>
+    <CanvasApp>
+      <Name>spl_certificatemanagerapp_867ac</Name>
+      <AppVersion>2024-11-22T15:58:01Z</AppVersion>
+      <Status>Ready</Status>
+      <CreatedByClientVersion>3.24112.10.0</CreatedByClientVersion>
+      <MinClientVersion>3.24112.10.0</MinClientVersion>
+      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24112.10","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20241122T155801Z-3.24112.10.0"}</Tags>
+      <IsCdsUpgraded>0</IsCdsUpgraded>
+      <GalleryItemId xsi:nil="true"></GalleryItemId>
+      <BackgroundColor>rgba(255, 255, 255, 1)</BackgroundColor>
+      <DisplayName>Certificate Manager App</DisplayName>
+      <Description>This is an application template created by Darren Neese!
+http://superpowerlabs.co</Description>
+      <CommitMessage xsi:nil="true"></CommitMessage>
+      <Publisher xsi:nil="true"></Publisher>
+      <AuthorizationReferences>[]</AuthorizationReferences>
+      <ConnectionReferences>{"a64a2522-0a9e-4c2b-b7df-5b0850faadfd":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1716/1.0.1716.3922/office365/icon.png","dataSources":["Office365Outlook"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["SendEmailV2"]},"54d4e7cf-7d3a-489f-b2d7-539602de9b58":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Office 365 Users","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1717/1.0.1717.3929/office365users/icon.png","dataSources":["Office365Users"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["UserPhoto_V2","UserProfile_V2"]},"ee725be1-2123-4a6d-8ed7-15ae9b58ab60":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png","dataSources":["AppUser","AppUserCertificate","AppUserRole","Certificate","Notification","Role","UserNotification"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"https://doaccelerator.sharepoint.com/sites/Certificate-Manager-SharePoint-Data":{"dataSources":{"AppUser":{"tableName":"f7389471-4c5c-424d-9ee1-60063860188a"},"AppUserCertificate":{"tableName":"d6cf8a47-93b4-448e-a45a-4df7f841dddf"},"AppUserRole":{"tableName":"f2a6abb0-14ad-4834-9d0e-23d2bf6f2688"},"Certificate":{"tableName":"b64b7f3c-acbc-4d5b-bdc5-3883cb7e0408"},"Notification":{"tableName":"d0fee3b6-9393-438b-9091-084b14c0e98b"},"Role":{"tableName":"ca216360-ebef-4816-ac8f-76625bba2dc7"},"UserNotification":{"tableName":"52f0e8e3-a4ca-4ffe-b589-30bb3f7295cc"}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read","providers/PowerPlatform.Governance/Operations/Write","providers/PowerPlatform.Governance/Operations/Delete"]},"67f92d12-f04b-4cb4-b325-2a868140aaea":{"id":"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness","displayName":"Excel Online (Business)","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1718/1.0.1718.3946/excelonlinebusiness/icon.png","dataSources":["Table1_1"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"sites%252Fdoaccelerator.sharepoint.com%252Cd724209a-9211-4568-987a-e0f2dcc8669f%252Ccd83e317-af5c-4839-a3fc-4b73d9fd02c3,b%2521miAk1xGSaEWYeuDy3Mhmnxfjg81crzlIo_xLc9n9AsPADYjl8oDKSIkHanMZpfh0,017HXSR5RCKPGAYCUSP5A2LYGQQNWKMTV6":{"dataSources":{"Table1_1":{"tableName":"{C6C9C6D9-5E9E-4E98-B49B-200F0907A9EF}"}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read","providers/PowerPlatform.Governance/Operations/Write"]}}</ConnectionReferences>
+      <DatabaseReferences>{}</DatabaseReferences>
+      <AppComponents>[]</AppComponents>
+      <AppComponentDependencies>[]</AppComponentDependencies>
+      <CanConsumeAppPass>0</CanConsumeAppPass>
+      <CanvasAppType>0</CanvasAppType>
+      <BypassConsent>0</BypassConsent>
+      <AdminControlBypassConsent>0</AdminControlBypassConsent>
+      <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
+      <IsCustomizable>1</IsCustomizable>
+      <BackgroundImageUri>/CanvasApps/spl_certificatemanagerapp_867ac_BackgroundImageUri</BackgroundImageUri>
+      <DocumentUri>/CanvasApps/spl_certificatemanagerapp_867ac_DocumentUri.msapp</DocumentUri>
+      <AdditionalUris>
+        <AdditionalUri>/CanvasApps/spl_certificatemanagerapp_867ac_AdditionalUris0_identity.json</AdditionalUri>
+      </AdditionalUris>
+    </CanvasApp>
+  </CanvasApps>
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="spl_sharedoffice365_f48a8">
+      <connectionreferencedisplayname>Office 365 Outlook ServerCertificateManager-f48a8</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="spl_sharedsharepointonline_eb6b8">
+      <connectionreferencedisplayname>SharePoint ServerCertificateManager-eb6b8</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sharepointonline</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>

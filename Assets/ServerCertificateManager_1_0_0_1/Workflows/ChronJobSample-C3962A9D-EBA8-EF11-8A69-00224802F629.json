@@ -1,0 +1,113 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_office365": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "spl_sharedoffice365_f48a8"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      },
+      "shared_sharepointonline": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "spl_sharedsharepointonline_eb6b8"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "AM1": {
+          "recurrence": {
+            "frequency": "Day",
+            "interval": 1,
+            "timeZone": "Central Standard Time",
+            "schedule": {
+              "hours": [
+                "1"
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "e1e48897-cc5e-432f-a1b7-b6e0dd12b999"
+          },
+          "type": "Recurrence"
+        }
+      },
+      "actions": {
+        "Send_an_email_(V2)": {
+          "runAfter": {
+            "Get_file_content": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "54a811b8-3169-4cdd-a5df-a1f0b69b3633"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365",
+              "connectionName": "shared_office365",
+              "operationId": "SendEmailV2"
+            },
+            "parameters": {
+              "emailMessage/To": "darren@doaccelerator.com",
+              "emailMessage/Subject": "LOOK AT THIS! ",
+              "emailMessage/Body": "<p>JUST LOOK AT IT!&nbsp;</p>",
+              "emailMessage/Attachments": [
+                {
+                  "Name": "JustLook.png",
+                  "ContentBytes": "@body('Get_file_content')"
+                }
+              ],
+              "emailMessage/Importance": "Normal"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Get_file_content": {
+          "runAfter": {},
+          "metadata": {
+            "%252fShared%2bDocuments%252fskool-darren.png": "/Shared Documents/skool-darren.png",
+            "operationMetadataId": "880079c4-33bd-40bc-a0ad-86e4b84d4a7e"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+              "connectionName": "shared_sharepointonline",
+              "operationId": "GetFileContent"
+            },
+            "parameters": {
+              "dataset": "https://doaccelerator.sharepoint.com/sites/Certificate-Manager-SharePoint-Data",
+              "id": "%252fShared%2bDocuments%252fskool-darren.png",
+              "inferContentType": true
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}
