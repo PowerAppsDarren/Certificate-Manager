@@ -40,3 +40,17 @@ TODO:
 
 #004A87 - PrimaryDark
 #103959 - SecondaryDark
+
+---
+
+🆓 PL-7001 Power Apps, Canvas Apps 
+
+https://learn.microsoft.com/en-us/credentials/applied-skills/create-manage-canvas-apps-power-apps/
+
+🆓 PL-7002 Create and Manage Automated Processes by using Power Automate
+
+https://learn.microsoft.com/en-us/credentials/applied-skills/create-and-manage-automated-processes-with-power-automate/
+
+🆓 PL-7003: Create and Manage Model-Driven Apps with Power Apps and Dataverse
+
+https://learn.microsoft.com/en-us/credentials/applied-skills/create-and-manage-model-driven-apps-with-power-apps-and-dataverse/

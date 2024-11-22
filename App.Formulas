@@ -227,7 +227,11 @@
         //
         // App Admin
         //
-        AppAdminLeftSideBarWidth: 257
+        AppAdminLeftSideBarWidth: 257,
+        //
+        // Galleries
+        //
+        ShowGridLines: false
     };
 
     fxYesNoMaybe = ["Yes", "No", "Maybe", "(N/A)"];
@@ -4367,6 +4371,9 @@
         Expression
     );
 
+    //fxRegExNumeric = "^\d+(.\d+)?$";
+    //fxRegExEmail = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$";
+
     fxRegExStringsCollection = [
         {
             Name: "Numeric",
@@ -4911,6 +4918,7 @@
         {Title: "Departments",          SortOrder: 6,   ScreenToGoTo: 'Edit Departments Screen'}
     */
 
+    //fxFunction(MyInput:):Color
         
     /* ==========================================================================
 
